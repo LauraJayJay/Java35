@@ -5,9 +5,12 @@ public class Variables {
 
         //Initialization of variable
         number = 10;
+        System.out.println(number);
 
         //Declaring and Initializing new variable in one line
         int age = 75;
+        System.out.println("age = " + age);
+        age = 80;
         System.out.println("age = " + age);
     }
 }
