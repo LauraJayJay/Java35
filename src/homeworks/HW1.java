@@ -9,9 +9,14 @@ public class HW1 {
           String name = scanner.nextLine();
 
           System.out.println("Enter year of birth");
-          int year = scanner.nextInt();
+          int birthYear = scanner.nextInt();
 
-          System.out.println("Your name is  " + name + " and you are " + ( 2023 - year)+ " years old");
+          int age = 2023- birthYear;
+
+          System.out.println("Your name is  " + name + " and you are " + ( 2023 - birthYear)+ " years old");
+
+          System.out.println("Your name is  " + name + " and you are " + age + " years old");
+
 
 
 
