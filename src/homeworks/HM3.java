@@ -17,11 +17,15 @@ public class HM3 {
 
         int number = scanner.nextInt();
 
+        System.out.println("Is the number near 100?");
+
         boolean value1 = number >= 90;
 
         boolean value2 = number <= 110;
 
-        System.out.println( value1 && value2);
+        boolean value3 = number == 100;
+
+        System.out.println( (value1 && value2)  &&  !value3 );
 
 
 
