@@ -18,6 +18,15 @@ public class PrintOutNumbers {
 
         int input = scanner.nextInt();
 
+        if (input >= 0 ){
+            for (int i = input; i >= 0; i--)
+                System.out.print(i + " " );
+
+        } else {
+            for (int i = input; i <= 0; i++)
+                System.out.println(i + " ");
+        }
+
+        }
 
     }
-}
