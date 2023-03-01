@@ -25,13 +25,14 @@ public class HM5 {
 
         System.out.println("guess the number");
 
-        int maxWeight = 42;
         int input = scanner.nextInt();
 
-        if (input > 42 || input = 13,19,20,25,26,27,31,32,33,34,37,38,39,40,41) {
-            System.out.println("false");
-        } else {
-            System.out.println("true");
-        }
+        int amountOf7KgJars = input / 7;
+        System.out.println("amountOf7KgJars = " + amountOf7KgJars);
+
+        int amountOf1KgJars = input % 7;
+        System.out.println("amountOf1KgJars = " + amountOf1KgJars);
+
 
     }
+}
