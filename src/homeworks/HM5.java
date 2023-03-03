@@ -22,16 +22,19 @@ public class HM5 {
 
 
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("guess the number");
-
         int input = scanner.nextInt();
+
+
+
 
         int amountOf7KgJars = input / 7;
         System.out.println("amountOf7KgJars = " + amountOf7KgJars);
 
         int amountOf1KgJars = input % 7;
         System.out.println("amountOf1KgJars = " + amountOf1KgJars);
+
+        System.out.println(amountOf7KgJars + amountOf1KgJars <= 6);
 
 
     }

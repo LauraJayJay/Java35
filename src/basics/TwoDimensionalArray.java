@@ -1,5 +1,8 @@
 package basics;
 
+import java.sql.Array;
+import java.util.Arrays;
+
 public class TwoDimensionalArray {
     public static void main(String[] args) {
 
@@ -35,6 +38,12 @@ public class TwoDimensionalArray {
                 System.out.print(dreamCars[i][j] + " ");
             }
             System.out.println();
+
         }
+
+        //Same thing using for - each loops
+
+
+
     }
 }
