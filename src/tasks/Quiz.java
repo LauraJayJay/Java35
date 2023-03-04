@@ -62,7 +62,7 @@ public class Quiz {
 
         }
 
-        System.out.println("You have answered to " + score + "questions");
+        System.out.println("You have answered to " + score + " questions");
 
     }
 }
