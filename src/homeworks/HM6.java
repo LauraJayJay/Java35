@@ -12,5 +12,9 @@ public class HM6 {
            symbol++;
 
         } while (symbol < '[');
+
+       for (char i = 'A'; i <= 'Z'; i++){
+           System.out.println(i);
+       }
     }
 }

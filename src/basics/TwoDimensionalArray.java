@@ -43,7 +43,9 @@ public class TwoDimensionalArray {
 
         //Same thing using for - each loops
 
-
+        for (String [] rows : dreamCars){
+            System.out.println(Arrays.toString(rows));
+        }
 
     }
 }
