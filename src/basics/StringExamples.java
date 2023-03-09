@@ -1,12 +1,8 @@
 package basics;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 public class StringExamples {
     public static void main(String[] args) {
-
-        /*Scanner scanner = new Scanner(System.in);
+         /*Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter your name");
 
@@ -48,5 +44,42 @@ public class StringExamples {
         System.out.println(greetings.replaceAll("holiday","Chritmas"));
         System.out.println(greetings.replaceFirst("holiday","Chritmas"));
         System.out.println(greetings.replaceAll("nice holiday","nice Easter"));
+
+        //Substring
+        String introduction = "Hello there! My name is Bob and I'm 45";
+        System.out.println(introduction.substring(6));
+        System.out.println(introduction.substring(6,12));
+        System.out.println(introduction.length());
+
+        //we count from 0 the first symbol of the String
+        String bobsAge = introduction.substring(introduction.length()-2).trim();
+        System.out.println("Bob is " + bobsAge + " years old");
+
+        int bobsAgeAsInteger = Integer.parseInt (bobsAge);
+
+        if(bobsAgeAsInteger <= 18){
+            System.out.println("Adult");
+        }else{
+            System.out.println("Child");
+        }
+
+        //Wrapper class
+        int temp1 = 36;
+        Integer temp2 = 36;
+
+        String intStrValue = "1";
+        String floatStrValue = "2.0";
+        String doubleStrValue = "2.242345";
+        String booleanStrValue = "true";
+        String longStrValue = "1223423565";
+        String charStrValue = "d";
+
+        int intValue = Integer.parseInt(intStrValue);
+        float floatValue = Float.parseFloat(floatStrValue);
+        double doubleValue = Double.parseDouble(doubleStrValue);
+        boolean booleanValue = Boolean.parseBoolean(booleanStrValue);
+        long longValue = Long.parseLong(longStrValue);
+        char charValue = charStrValue.charAt(0); //0 pirma reiksme, nes skaiciuojame nuo 0
+
     }
 }
