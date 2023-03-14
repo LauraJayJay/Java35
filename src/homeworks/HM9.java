@@ -9,23 +9,24 @@ public class HM9 {
 
         System.out.print("Enter the height of tree: ");
         int h = input.nextInt();
-
+        //levels
         for(int i = 1 ;i <= h ; i++) {
+            //spaces
             for(int j = h-i ; j > 0 ; j--) {
-                System.out.print("_");
+                System.out.print(" ");
             }
+            //stars
             for(int k = 1; k <= i ; k++) {
                 System.out.print("* ");
             }
             System.out.println();
         }
 
-        for(int i = 1;i <= h - 2;i++) {
+        for(int i = 0;i < h-1;i++) {
             System.out.print(" ");
             }
-            for(int k = 2;k > 0;k--) {
-                System.out.print("| ");
-            }
+        System.out.print("#");
+
         }
 
 
