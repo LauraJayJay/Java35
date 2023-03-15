@@ -23,11 +23,16 @@ public class Methods {
     public static void printName(String name, int age){
         System.out.println("Hello your name is " + name);
         System.out.println("You are " + age + " years old");
+        System.out.println(sum(4,5,6));
+
 
     }
 
     public static String greetings(String name){
         String result = "Hi " + name;
         return result;
+    }
+    public static int sum (int num1, int num2, int num3) {
+        return num1+num2+num3;
     }
 }
