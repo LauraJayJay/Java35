@@ -4,21 +4,28 @@ import java.util.Scanner;
 
 public class HM12 {
     public static void main(String[] args) {
-
-        String x, y = "";
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the name:");
-        x = scanner.nextLine();
 
-        int m = x.length();
+        System.out.println("Enter a name");
 
-        for(int i = m - 1; i >= 0; i--) {
-            y = y + x.charAt(i);
-        } if (x.equalsIgnoreCase(y)) {
-            System.out.println("The name is palindrome.");
-        } else {
-            System. out.println("The name is not a palindrome.");
+        String input = scanner.nextLine().toLowerCase().trim().replaceAll(" ","");
+        boolean isPalindrome = true;
+
+        for (int i = 0; i < input.length() / 2; i++){
+            if(input.charAt(i) != input.charAt(input.length() - i - 1)){
+                isPalindrome = false;
+                break;
+            }
         }
+
+        if (isPalindrome){
+            System.out.printf("Your input %s is a polidrome \n", input);
+        } else{
+            System.out.printf("Your input %s is not a polidrome \n", input);
+        }
+
+
+
 
 
     }
