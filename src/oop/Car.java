@@ -4,10 +4,41 @@ public class Car {
 
     //Fields
 
-    String color;
+    private String color;
+    private
     String brand;
-    int maxSpeed;
+    private int maxSpeed;
 
+    //Setter methods
+
+    public void setColor(String color){
+        this.color =color;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        if(maxSpeed >= 30){
+            this.maxSpeed = maxSpeed;
+        }else{
+            System.out.println("Invalid input");
+        }
+    }
+
+    //Getter methods
+    public String getColor(){
+        return color;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
     //Methods
 
     public void printCarInfo(){
