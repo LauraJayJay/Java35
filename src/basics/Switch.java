@@ -24,6 +24,7 @@ public class Switch {
                 break;
             default:
                 System.out.println("Grade is not accepted");
+                break;
         }
 
     }

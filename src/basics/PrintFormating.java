@@ -60,8 +60,8 @@ public class PrintFormating {
 
         //Replace
         String greetings = "This is holiday time. \nHave a nice holiday";
-        System.out.println(greetings.replaceAll("holiday","Chritmas"));
-        System.out.println(greetings.replaceFirst("holiday","Chritmas"));
+        System.out.println(greetings.replaceAll("holiday","Christmas"));
+        System.out.println(greetings.replaceFirst("holiday","Christmas"));
         System.out.println(greetings.replaceAll("nice holiday","nice Easter"));
 
         //Substring

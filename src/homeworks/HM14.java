@@ -1,27 +1,32 @@
 package homeworks;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class HM14 {
     public static void main(String[] args) {
 
-        double discount,amount,markedprice,sum;
+        float discount,result,markedPrice,sum;
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("enter marked price ");
+        System.out.println("Enter marked price ");
 
-        markedprice = scanner.nextDouble();
+        markedPrice = scanner.nextFloat();
 
-        System.out.println("enter discount percentage ");
+        System.out.println("Enter discount percentage ");
 
-        discount=scanner.nextDouble();
+        discount=scanner.nextFloat();
 
         sum = 100-discount;
 
-        amount = ((sum * markedprice)/100);
+        DecimalFormat df = new DecimalFormat("0.00");
 
-        System.out.println("amount after discount= " + amount);
+        result = ((sum * markedPrice) / 100);
+
+        System.out.printf("Amount after discount = %.2f \n", result);
+
+        System.out.println("Amount after discount = " + df.format (result));
     }
 
     }

@@ -14,7 +14,7 @@ public class PrintOutNumbers {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("enter the number");
+        System.out.println("Enter the number");
 
         int input = scanner.nextInt();
 
